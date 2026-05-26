@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header{
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+header span{
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+}
+
+/* Container */
+
+.container{
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+/* Left Column */
+
+.left-column{
+    flex: 2;
+}
+
+/* Right Column */
+
+.right-column{
+    flex: 1;
+}
+
+/* Cards */
+
+.blog-card,
+.sidebar-card{
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.blog-card{
+    padding: 20px;
+}
+
+.blog-card h2{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.date{
+    text-align: center;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.blog-card img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.blog-card p{
+    margin-bottom: 15px;
+}
+
+/* Footer */
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card-footer button{
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-footer button:hover{
+    background-color: black;
+    color: white;
+}
+
+.card-footer span{
+    background-color: black;
+    color: white;
+    padding: 3px 8px;
+}
+
+/* Sidebar */
+
+.sidebar-content{
+    padding: 15px;
+}
+
+.sidebar-title{
+    background-color: #f1f1f1;
+    padding: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Popular Posts */
+
+.popular-post{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.popular-post:hover{
+    background-color: #f1f1f1;
+}
+
+.popular-post img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Tags */
+
+.tags{
+    padding: 15px;
+}
+
+.tags span{
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.tags .active{
+    background-color: black;
+    color: white;
+}
+
+/* Responsive */
+
+@media(max-width: 768px){
+
+    .container{
+        flex-direction: column;
+    }
+
+    header h1{
+        font-size: 35px;
+    }
+}
